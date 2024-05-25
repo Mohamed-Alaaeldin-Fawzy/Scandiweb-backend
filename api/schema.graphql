@@ -1,0 +1,39 @@
+type Category {
+  id: ID!
+  name: String!
+}
+
+type Product {
+  id: ID!
+  name: String!
+  in_stock: Boolean!
+  # gallery: [String!]!
+  description: String!
+  # category: Category!
+  # attributes: [Attribute!]!
+  # prices: [Price!]!
+  brand: String!
+}
+
+type Attribute {
+  id: ID!
+  name: String!
+  type: String!
+  items: [AttributeItem!]!
+}
+
+type AttributeItem {
+  id: ID!
+  displayValue: String!
+  value: String!
+}
+
+type Price {
+  amount: Float!
+  currency: Currency!
+}
+
+type Currency {
+  label: String!
+  symbol: String!
+}

@@ -1,0 +1,13 @@
+# Disable directory listing
+Options -Indexes
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Set the base directory for the application
+RewriteBase /backend
+
+# Redirect all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

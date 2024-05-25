@@ -1,0 +1,26 @@
+{
+  "name": "mohamed/backend",
+  "description": "Fullstack test backend",
+  "type": "project",
+  "require": {
+    "vlucas/phpdotenv": "^5.6",
+    "illuminate/database": "^10.48",
+    "webonyx/graphql-php": "^15.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "/api",
+      "Model\\": "api/model/",
+      "Repository\\": "api/repository/",
+      "Controller\\": "api/controller/",
+      "Resolver\\": "api/resolver/",
+      "Query\\": "api/query/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mohamed Alaa",
+      "email": "alaaeldine96@outlook.com"
+    }
+  ]
+}
