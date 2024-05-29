@@ -135,6 +135,13 @@ class GraphQL
                     'type' => Type::listOf($productType),
                     'resolve' => [$this->data['product'], 'getAllProducts'],
                 ],
+                'product' => [
+                    'type' => $productType,
+                    'args' => [
+                        'id' => ['type' => Type::string()],
+                    ],
+                    'resolve' => [$this->data['product'], 'getProductById'],
+                ],
                 'attributes' => [
                     'type' => Type::listOf($attributeType),
                     'resolve' => [$this->data['attributes'], 'getAllAttributes'],

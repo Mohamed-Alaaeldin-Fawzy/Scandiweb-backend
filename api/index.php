@@ -38,6 +38,8 @@ $attributesResolver = new AttributesResolver($attributesRepository);
 $orderRepository = new OrderRepository();
 $orderResolver = new OrderResolver($orderRepository);
 
+
+// echo json_encode($productResolver->getProductById("apple-airpods-pro"));
 $resolvers = [
     'product' => $productResolver,
     'category' => $categoryResolver,

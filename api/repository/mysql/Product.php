@@ -22,4 +22,19 @@ class Product extends AbstractProduct {
         }, $products);
     }
 
+    public function getProductById($id): ProductModel {
+        try {
+            $product = ProductModel::with('category', 'attributes', 'prices', 'gallery')
+                                    ->where('id', $id)
+                                    ->first()
+                                    ->toArray();
+        } catch (\Exception $e) {
+            error_log('Error retrieving product: ' . $e->getMessage());
+            return null;
+        }
+
+        return new ProductModel($product);
+
+}
+
 }
