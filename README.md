@@ -13,10 +13,13 @@ This is a GraphQL API built with native PHP, designed following Object-Oriented 
 │   └── database.php
 │
 ├── /api
-│   ├── /Controller
+│   ├── /controller
 │   │   └── Graphql.php
 │   │
-│   ├── /Model
+│   ├── /controller
+│   │   └── Graphql.php
+│   │
+│   ├── /model
 │   │   ├── AttributeItem.php
 │   │   ├── Attributes.php
 │   │   ├── Category.php
@@ -24,7 +27,17 @@ This is a GraphQL API built with native PHP, designed following Object-Oriented 
 │   │   ├── Order.php
 │   │   └── OrderItem.php
 │   │   ├── Prices.php
-│   │   ├── Product.php
+│   │   └── Product.php
+│   │
+│   ├── /migration
+│   │   ├── AttributeItem.php
+│   │   ├── Attributes.php
+│   │   ├── Category.php
+│   │   ├── Gallery.php
+│   │   ├── Order.php
+│   │   └── OrderItem.php
+│   │   ├── Prices.php
+│   │   └── Product.php
 │   │
 │   ├── /repository
 │   │   └── /mysql
@@ -35,7 +48,7 @@ This is a GraphQL API built with native PHP, designed following Object-Oriented 
 │   │   ├── AbstractProductRepository.php
 │   │   ├── AbstractOrderRepository.php
 │   │   ├── AbstractCategoryRepository.php
-│   │   ├── AbstractAttributeRepository.php
+│   │   └── AbstractAttributeRepository.php
 │   │
 │   ├── /resolver
 │   │   ├── Product.php
