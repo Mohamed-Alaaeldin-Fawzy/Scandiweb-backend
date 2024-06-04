@@ -83,7 +83,7 @@ This is a GraphQL API built with native PHP, designed following Object-Oriented 
 
 4. Run the database migrations:
    ```sh
-   php /path/to/migration/script.php
+   php injectData.php
    ```
 
 ## Usage
